@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application 4</string>
+    <string name="app_name">My Recipe</string>
     <string name="btn">Up</string>
     <string name="d1">Buffalo Chicken Dip</string>
     <string name="d2">Mini Caramel Rolls</string>
@@ -19,4 +19,5 @@
     <string name="r4">1/4 teaspoon salt 1/4 teaspoon garlic powder 1/4 teaspoon chili powder 1 pound fresh jalapenos, halved lengthwise and seeded 1/2 cup dry bread crumbs . In a large bowl, combine the cheeses, bacon and seasonings; mix well. Spoon about 2 tablespoonfuls into each pepper half. Roll in bread crumbs. Place in a greased 15x10x1-in. baking pan. Bake, uncovered, at 325° for 15 minutes for spicy flavor, 25 minutes for medium and 35 minutes for mild. Serve with sour cream, dip or dressing.</string>
     <string name="r5">1 large egg 1 cup sour cream 5 tablespoons butter, melted 1 teaspoon vanilla extract 3/4 cup mint or semisweet chocolate chips. In a large bowl, combine the flour, sugar, baking powder, baking soda and salt. Combine the egg, sour cream, butter and vanilla. Stir into dry ingredients just until moistened. Fold in chocolate chips. Fill greased or paper-lined muffin cups three-fourths full. Bake at 350° for 18-20 minutes or until a toothpick inserted in the center comes out clean. Cool for 5 minutes before removing from pan to a wire rack.</string>
     <string name="r6">5 cups water 1/2 cup reduced-sodium soy sauce 1 envelope onion soup mix 1 garlic clove, minced 1 teaspoon browning sauce, optional 1 loaf (1 pound) French bread . In a Dutch oven over medium-high heat, brown roast on all sides in oil; drain. In a large skillet, saute onions in 2 tablespoons of butter until tender. Add the water, soy sauce, soup mix, garlic and, if desired, browning sauce. Pour over roast. Cover and bake at 325° for 2-1/2 hours or until meat is tender. </string>
+    <string name="splash">Recipe app</string>
 </resources>
