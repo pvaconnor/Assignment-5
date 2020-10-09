@@ -17,9 +17,8 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="234dp"
+                android:layout_width="427dp"
                 android:layout_height="212dp"
-                android:layout_marginStart="99dp"
                 android:layout_marginEnd="78dp"
                 android:layout_marginBottom="16dp"
                 app:srcCompat="@drawable/i2" />
@@ -36,9 +35,8 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginStart="129"
                 android:layout_marginTop="24dp"
                 android:text="@string/btn" />
         </LinearLayout>
