@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.myapplication4.R;
+import com.example.assignment5.R;
 import com.example.assignment5.dummy.DummyContent;
 
 /**
@@ -64,9 +64,32 @@ public class ItemDetailFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
         // Show the dummy content as text in a TextView.
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
-        }
+        if (mItem.id.equals("1")) {
+            rootView = inflater.inflate(R.layout.activity_main2, container, false);
+        };
+
+        if (mItem.id.equals("6")) {
+            rootView = inflater.inflate(R.layout.activity_main7, container, false);
+        };
+
+        if (mItem.id.equals("2")) {
+            rootView = inflater.inflate(R.layout.activity_main3, container, false);
+        };
+
+        if (mItem.id.equals("3")) {
+            rootView = inflater.inflate(R.layout.activity_main4, container, false);
+        };
+
+        if (mItem.id.equals("4")) {
+            rootView = inflater.inflate(R.layout.activity_main5, container, false);
+        };
+
+        if (mItem.id.equals("5")) {
+            rootView = inflater.inflate(R.layout.activity_main6, container, false);
+        };
+
+
+
 
         return rootView;
     }

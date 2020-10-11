@@ -15,7 +15,7 @@ import androidx.appcompat.app.ActionBar;
 
 import android.view.MenuItem;
 
-import com.example.myapplication4.R;
+import com.example.assignment5.R;
 
 /**
  * An activity representing a single Item detail screen. This
@@ -31,6 +31,7 @@ public class ItemDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_item_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

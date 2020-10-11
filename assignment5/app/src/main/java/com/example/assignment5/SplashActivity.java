@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 frozen.stop();
                 finish();
-                startActivity(new Intent( SplashActivity.this, MainActivity.class) );
+                startActivity(new Intent( SplashActivity.this, ItemListActivity.class) );
             }
         };
         Timer opening = new Timer();

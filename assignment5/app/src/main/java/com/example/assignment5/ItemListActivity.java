@@ -17,7 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.myapplication4.R;
+import com.example.assignment5.R;
 
 import com.example.assignment5.dummy.DummyContent;
 
@@ -43,13 +43,14 @@ public class ItemListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        DummyContent.addItem(new DummyContent.DummyItem("1", getResources().getString(R.string.d1),getResources().getString(R.string.t1)));
-        DummyContent.addItem(new DummyContent.DummyItem("2", getResources().getString(R.string.d2),getResources().getString(R.string.t2)));
-        DummyContent.addItem(new DummyContent.DummyItem("3", getResources().getString(R.string.d3),getResources().getString(R.string.t3)));
-        DummyContent.addItem(new DummyContent.DummyItem("4", getResources().getString(R.string.d4),getResources().getString(R.string.t4)));
-        DummyContent.addItem(new DummyContent.DummyItem("5", getResources().getString(R.string.d5),getResources().getString(R.string.t5)));
-        DummyContent.addItem(new DummyContent.DummyItem("6", getResources().getString(R.string.d6),getResources().getString(R.string.t6)));
-
+        if (DummyContent.ITEMS.size() == 0) {
+            DummyContent.addItem(new DummyContent.DummyItem("1", getResources().getString(R.string.d1), getResources().getString(R.string.t1)));
+            DummyContent.addItem(new DummyContent.DummyItem("2", getResources().getString(R.string.d2), getResources().getString(R.string.t2)));
+            DummyContent.addItem(new DummyContent.DummyItem("3", getResources().getString(R.string.d3), getResources().getString(R.string.t3)));
+            DummyContent.addItem(new DummyContent.DummyItem("4", getResources().getString(R.string.d4), getResources().getString(R.string.t4)));
+            DummyContent.addItem(new DummyContent.DummyItem("5", getResources().getString(R.string.d5), getResources().getString(R.string.t5)));
+            DummyContent.addItem(new DummyContent.DummyItem("6", getResources().getString(R.string.d6), getResources().getString(R.string.t6)));
+        };
 
         setContentView(R.layout.activity_item_list);
 
@@ -128,8 +129,8 @@ public class ItemListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mIdView.setText(mValues.get(position).id);
-            holder.mContentView.setText(mValues.get(position).content);
+            holder.mIdView.setText(mValues.get(position).content);
+            holder.mContentView.setText(mValues.get(position).details);
 
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);
